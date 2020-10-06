@@ -1,0 +1,18 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncaixa_alta = getattr(undertest, 'caixa_alta', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_exemplo(self):\n     assert caixa_alta(\"A primeira letra de cada palavra\") == \"a Primeira Letra De Cada Palavra\"\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    },
+    "cxalta.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Caixa Alta\n\ndef caixa_alta(frase):\n\ts = ''\n\tflag = True\n\tnha = True\n\tif len(frase) > 1:\n\t\tif ord(frase[0]) >= 97 and frase[1] != ' ':\n\t\t\ts += chr(ord(frase[0]) - 32)\n\t\telif ord(frase[0]) >= 97 and frase[1] == ' ':\n\t\t\ts += frase[0]\n\t\telif ord(frase[0]) < 97 and frase[1] == ' ':\n\t\t\ts += chr(ord(frase[0]) + 32)\n\t\telif ord(frase[0]) < 97 and frase[1] != ' ':\n\t\t\ts += frase[0]\n\t\tfor i in range(1,len(frase)-1):\n\t\t\tviz = frase[i + 1]\n\t\t\tant = frase[i - 1]\n\t\t\tif ant != ' ' and viz != ' ':\n\t\t\t\ts += frase[i]\n\t\t\telif viz != ' ' and ant == ' ':\n\t\t\t\tif ord(frase[i]) < 97:\n\t\t\t\t\ts += frase[i]\n\t\t\t\telse:\n\t\t\t\t\tt = ord(frase[i]) - 32\n\t\t\t\t\tm = chr(t)\n\t\t\t\t\ts += m\n\t\t\telif viz == ' ' and ant == ' ':\n\t\t\t\tif ord(frase[i]) >= 97:\n\t\t\t\t\ts += frase[i]\n\t\t\t\telse:\n\t\t\t\t\tf = ord(frase[i]) + 32\n\t\t\t\t\tg = chr(f)\n\t\t\t\t\ts += g\n\t\t\telif viz == ' ' and ant != ' ':\n\t\t\t\ts += frase[i]\n\t\tfor i in range(len(frase)- 1,-1 ,-1):\n\t\t\tif ord(frase[i]) < 97 and frase[i - 1] == ' ':\n\t\t\t\ts += chr(ord(frase[i]) + 32)\n\t\t\telse:\n\t\t\t\ts += frase[i]\n\t\t\tbreak\n\telse:\n\t\tif ord(frase[0]) >= 97:\n\t\t\ts += frase[0]\n\t\telse:\n\t\t\ts += chr(ord(frase[0]) + 32)\n\treturn s\n\n",
+      "name": "cxalta.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "cf24d1af0da4093c30549bbf63a85b5e",
+  "iid": 5810153332932608,
+  "activity_revision": "1.0.1"
+}

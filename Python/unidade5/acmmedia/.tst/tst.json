@@ -1,0 +1,14 @@
+{
+  "files": {
+    "acimadamedia.py": {
+      "category": "answer",
+      "data": "#coding: utf-8  \n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Acima da m\u00e9dia\n\ndef meu_split(palavra):\n\ts = ''\n\tl = []\n\tfor i in range(len(palavra)):\n\t\tif palavra[i] != ' ':\n\t\t\ts += palavra[i]\n\t\telif s != '':\n\t\t\tl.append(s)\n\t\t\ts = ''\n\tif s != '':\n\t\tl.append(s)\n\treturn l\n\nmedia_mensal = float(raw_input())\n\nmedias = []\nwhile True:\n\tcima = 0.0\n\tcont = 0\n\tnum = raw_input()\n\tlista_num = meu_split(num)\n\tif lista_num[0] == 'fim':\n\t\tbreak\n\tfor i in range(len(lista_num)):\n\t\tcima += int(lista_num[i])\n\t\tcont += 1\n\tmedia = cima / cont\n\tif media > media_mensal:\n\t\tprint num\n\tif media < media_mensal / 2:\n\t\tbreak\n",
+      "name": "acimadamedia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f9cd65731d7a44d357bce156c280cd8a",
+  "iid": 5314928839753728,
+  "activity_revision": "1.0.1"
+}

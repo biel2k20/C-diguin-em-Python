@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 2,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 89.21,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "binfordec.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: B2 para B10\n\nbinario = raw_input()\n\nsoma = 0\nvalores = [1,2,4,8,16,32,64,128,256,512,1024,2048]\nvalor = valores[len(binario)-1]\nfor bit in range(len(binario)):\n\t\tconta = int(binario[bit]) * valor\n\t\tprint '%d * %d = %d' % (int(binario[bit]), valor, conta)\n\t\tsoma += conta\n\t\tvalor /= 2\n\nprint '%s(2) = %d(10)' % (binario, soma)\n",
+      "name": "binfordec.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "b2679991fd736eaef6540c64e434db33",
+  "iid": 5631000415567872,
+  "activity_revision": "1.0.4"
+}

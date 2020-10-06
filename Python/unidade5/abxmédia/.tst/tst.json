@@ -1,0 +1,14 @@
+{
+  "files": {
+    "abaixodamedia.py": {
+      "category": "answer",
+      "data": "#coding: utf-8  \n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Abaixo da m\u00e9dia\n\nn = ''\n\nl = []\nwhile n != 'fim':\n\tn = raw_input()\n\tl.append(n)\ncima1 = 0\ncont = 0\nfor i in range(len(l)-1):\n\tcima1 += int(l[i])\n\tcont += 1\nmedia = float(cima1) / cont\nprint '%.2f' % (media)\n\nfor i in range(0,len(l)-1):\n\tif int(l[i]) < media:\n\t\tprint '%d %d' % (i + 1, int(l[i]))\n",
+      "name": "abaixodamedia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8b2bfce0242bd6ec9732772a78f36538",
+  "iid": 4880650402267136,
+  "activity_revision": "1.0.1"
+}

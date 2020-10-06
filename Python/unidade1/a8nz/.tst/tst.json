@@ -1,0 +1,14 @@
+{
+  "files": {
+    "areac.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\nimport math\n\na = float(raw_input())\narea = math.pi * (a ** 2)\n\nprint \"%.2f\" % (area)\n",
+      "name": "areac.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "406278e5914c4b753c460ec5eaceda21",
+  "iid": 5160656097509376,
+  "activity_revision": "1.1.3"
+}

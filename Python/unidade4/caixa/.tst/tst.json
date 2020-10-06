@@ -1,0 +1,18 @@
+{
+  "files": {
+    "cxpreta.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Caixa Preta\n\nquant_medicoes = int(raw_input())\n\nlista = []\nfor e in range(quant_medicoes):\n\tdados = raw_input().split()\n\tpeso = dados[0]\n\tcombust = dados[1]\n\taltitude = dados[2]\n\tlista.append(peso)\n\tlista.append(combust)\n\tlista.append(altitude)\n\tfor x in range(len(dados)):\n\t\tif int(dados[x]) < 0:\n\t\t\tif dados[x] == peso:\n\t\t\t\tprint 'dado inconsistente. peso negativo.'\n\t\t\telif dados[x] == combust :\n\t\t\t\tprint 'dado inconsistente. combust\u00edvel negativo.'\n\t\t\telif dados[x] == altitude:\n\t\t\t\tprint 'dado inconsistente. altitude negativa.'\ncont = 0\nfor s in range(len(lista)):\n\tif int(lista[s]) > 0:\n\t\tcont += 1\n\telse:\n\t\tbreak\nif cont > 0:\t\n\tprint '%d dados v\u00e1lidos.' % (cont)\nelif cont == 1:\n\tprint '%d dado v\u00e1lido.' % (cont)\n",
+      "name": "cxpreta.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 11,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 117.21,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "610aaaaef07d0dbb7c08c7e064410b41",
+  "iid": 5048437057781760,
+  "activity_revision": "1.1.1"
+}

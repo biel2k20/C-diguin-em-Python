@@ -1,0 +1,19 @@
+{
+  "files": {
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\naltera_vetor_por_escalar = getattr(undertest, 'altera_vetor_por_escalar', None)\n\nclass PublicTests(unittest.TestCase):\n\n   def test_adicional_1(self):\n       vetor_1 = [1, 2, 3]\n       assert altera_vetor_por_escalar(vetor_1, -1) == None\n       assert vetor_1 == [-1, -2, -3]\n       assert altera_vetor_por_escalar(vetor_1, 2) == None\n       assert vetor_1 == [-2, -4, -6]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    },
+    "vetor.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n\ndef altera_vetor_por_escalar(v, n):\n\tl = []\n\tfor i in range(len(v)-1,-1,-1):\n\t\ta = v.pop(i)\n\t\tb = a * n\n\t\tl.append(b)\n\tfor i in range(len(l)-1,-1,-1):\n\t\tv.append(l[i])\n\n\n",
+      "name": "vetor.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "70304079e8f86726de69445fa99632e5",
+  "iid": 5338499116957696,
+  "activity_revision": "2.0.2"
+}

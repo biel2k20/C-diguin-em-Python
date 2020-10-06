@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "Antônio\n5\n",
+      "output": "Antônio, 5 anos, Infantil A.\n"
+    },
+    {
+      "category": "public",
+      "input": "André\n9\n",
+      "output": "André, 9 anos, Infantil B.\n"
+    },
+    {
+      "category": "public",
+      "input": "Eduardo\n3\n",
+      "output": "Eduardo, 3 anos, Não pode competir.\n"
+    }
+  ]
+}

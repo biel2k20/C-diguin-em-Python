@@ -1,0 +1,19 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "4.5\n1.0\n",
+      "output": "77.8% do peso do produto é de água congelada.\nProduto não conforme.\n"
+    },
+    {
+      "category": "public",
+      "input": "10.0\n9.8\n",
+      "output": "2.0% do peso do produto é de água congelada.\nProduto qualis A.\n"
+    },
+    {
+      "category": "public",
+      "input": "10.0\n9.3\n",
+      "output": "7.0% do peso do produto é de água congelada.\nProduto em conformidade.\n"
+    }
+  ]
+}

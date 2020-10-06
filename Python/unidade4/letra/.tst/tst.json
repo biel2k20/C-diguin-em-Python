@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 7,\n      \"vhalstead\": 25.27,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "classificaletra.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Classifica Letra\n\npalavra = raw_input()\n\nfor i in range(len(palavra)):\n\tif palavra[i] in 'aeiouAEIOU':\n\t\tprint '<%s> sim' % (palavra[i])\n\telse:\n\t\tprint '<%s> nao' % (palavra[i])\n",
+      "name": "classificaletra.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "677cd8b12327eb90c794ffcc1a0912da",
+  "iid": 5744651256463360,
+  "activity_revision": "1.0.2"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "contadivisiveis.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Conta Divis\u00edveis\n\nvalor_K = int(raw_input())\nvalor_N = int(raw_input())\n\nl = []\ncont = 0\n\nfor i in range(valor_N):\n\tinteiro = int(raw_input())\n\tl.append(inteiro)\nfor i in range(len(l)):\n\tif l[i] % valor_K == 0:\n\t\tcont += 1\nporcentagem = 100.0 / valor_N * cont\n\nprint '%d (%.1f%%)' % (cont, porcentagem)\n",
+      "name": "contadivisiveis.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 72.0,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "df432c828c4218e8d4d55597604c73de",
+  "iid": 5264260305256448,
+  "activity_revision": "1.1.1"
+}

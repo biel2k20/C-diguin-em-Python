@@ -1,0 +1,14 @@
+{
+  "files": {
+    "emborg.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dnatas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Embarque Organizado\n\ndef meu_split(palavra):\n\ts = ''\n\tl = []\n\tfor i in range(len(palavra)):\n\t\tif palavra[i] != ' ':\n\t\t\ts += palavra[i]\n\t\telif s != '':\n\t\t\tl.append(int(s))\n\t\t\ts = ''\n\tif s != '':\n\t\tl.append(int(s))\n\treturn l\n\nwhile True:\n\tpassageiros = raw_input()\n\tordem = meu_split(passageiros)\n\tbreak\n\nl = []\nl2 = []\nfor i in range(len(ordem)):\n\tl.append(ordem[i])\n\tif ordem[i] % 2 == 0:\n\t\tcontinue\n\telse:\n\t\tl2.append(ordem[i])\nfor i in range(len(ordem)):\n\tif ordem[i] % 2 == 0:\n\t\tl2.append(ordem[i])\n\telse:\n\t\tcontinue\nif l == l2:\n\tprint 'ok'\nelse:\n\tprint 'erro'\n",
+      "name": "emborg.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "110bfda4f5b11b4d2dd1e80317b419ed",
+  "iid": 5302197147402240,
+  "activity_revision": "1.0.1"
+}

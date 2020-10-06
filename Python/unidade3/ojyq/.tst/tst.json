@@ -1,0 +1,18 @@
+{
+  "files": {
+    "corredor.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Classifica Corredor\n\nkm = float(raw_input())\nhoras = float (raw_input())\nvelocidade = float(km) / float(horas)\n\nif velocidade < 10:\n\tprint 'Velocidade: %.1fkm/h. Corredor amador.' % (velocidade)\nelif 10 <= velocidade <= 15:\n\tprint 'Velocidade: %.1fkm/h. Corredor aspirante.' % (velocidade)\nelif velocidade > 15:\n\tprint 'Velocidade: %.1fkm/h. Corredor profissional.' % (velocidade)\n",
+      "name": "corredor.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 10,\n      \"vhalstead\": 41.51,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c72c2a29abd61a25e2bd0bc2dfd5e0c4",
+  "iid": 4895871397265408,
+  "activity_revision": "1.0.6"
+}

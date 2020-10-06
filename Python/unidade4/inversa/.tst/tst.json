@@ -1,0 +1,14 @@
+{
+  "files": {
+    "containversa.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Conta Inversa\n\npalavra = raw_input()\ncont = 0\ninversa = ''\nfor i in range(len(palavra)-1,-1,-1):\n\tinversa += palavra[i]\nfor j in range(len(inversa)):\n\tif inversa[j] == palavra[j]:\n\t\tcont += 1\n\nprint 'A palavra %s cont\u00e9m %d caractere(s) coincidente(s) com a sua inversa.' % (palavra, cont)\n",
+      "name": "containversa.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3683823bfac80e852d52d59c7c00d17c",
+  "iid": 5544679256883200,
+  "activity_revision": "1.1.1"
+}

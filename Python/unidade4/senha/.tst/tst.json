@@ -1,0 +1,18 @@
+{
+  "files": {
+    "convertersenha.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Converte senha\n\npalavra = raw_input()\n\ns = ''\ns += palavra[0]\ncont = 0\nfor e in range(1,len(palavra)):\n\tif not(palavra[e] in 'aeioAEIO'):\n\t\ts += palavra[e]\n\t\tcontinue\n\tif palavra[e] in 'aA':\n\t\ts += '4'\n\t\tcont += 1\n\telif palavra[e] in 'eE':\n\t\ts += '3'\n\t\tcont += 1\n\telif palavra[e] in 'iI':\n\t\ts += '1'\n\t\tcont += 1\n\telif palavra[e] in 'oO':\n\t\ts += '0'\n\t\tcont += 1\n\nprint s + ' (%d troca(s))' % (cont)\n",
+      "name": "convertersenha.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 11,\n      \"pep8\": 0,\n      \"lloc\": 19,\n      \"vhalstead\": 230.75,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "8fc0d77db4a64ca86803421f4f42ba5e",
+  "iid": 5718414005895168,
+  "activity_revision": "1.1.1"
+}

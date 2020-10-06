@@ -1,0 +1,19 @@
+{
+  "files": {
+    "calcseg.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: C\u00e1lculo de Seguro\n\ndef calcula_seguro(valor, lista):\n\tl = []\n\tpts = 0\n\tif int(lista[0]) <= 21 or lista[0] > 60:\n\t\tpts += 20\n\telif 22 <= int(lista[0]) <= 30:\n\t\tpts += 15\n\telif 31 <= int(lista[0]) < 40:\n\t\tpts += 12\n\telif 41 <= int(lista[0]) <= 60:\n\t\tpts += 10\n\tif lista[1] == True:\n\t\tpts += 10\n\telse:\n\t\tpts += 20\n\tif lista[2] == True:\n\t\tpts += 20\n\telse:\n\t\tpts += 10\n\tif lista[3] == True:\n\t\tpts += 20\n\telse:\n\t\tpts += 10\n\tif lista[4] == True:\n\t\tpts += 20\n\telse:\n\t\tpts += 10\n\tif lista[5] == True:\n\t\tpts += 10\n\telse:\n\t\tpts += 20\n\tif lista[6] == 'Trabalho':\n\t\tpts += 10\n\telse:\n\t\tpts += 20\n\tl.append(pts)\n\tif pts <= 80:\n\t\tl.append('Risco Baixo')\n\t\tpagar = valor * 0.10\n\telif 80 < pts <= 100:\n\t\tl.append('Risco Medio')\n\t\tpagar = valor * 0.20\n\telse:\n\t\tl.append('Risco Alto')\n\t\tpagar = valor * 0.30\n\tl.append(pagar)\n\treturn l\n",
+      "name": "calcseg.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ncalcula_seguro = getattr(undertest, 'calcula_seguro', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_basico(self):\n        assert calcula_seguro(2000.0, [21, True, True, True, True, True, 'Misto']) == [120, \"Risco Alto\", 600.0]\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+      "name": "public_tests.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "c62c59d94fc300c05e9f62fe559b7ba5",
+  "iid": 5855155463389184,
+  "activity_revision": "1.0.0"
+}

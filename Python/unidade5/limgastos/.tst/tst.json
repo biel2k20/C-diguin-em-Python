@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 8,\n      \"pep8\": 2,\n      \"lloc\": 19,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "limitegastos.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Limite de gastos\n\nmedia_da_secretaria = float(raw_input())\n\nwhile (True):\n    media = 0\n    saida = ''\n    entrada = raw_input()\n    if entrada != 'fim':\n        informacoes = entrada.split()\n        for i in informacoes:\n            media += float(i)\n        media /= len(informacoes)\n        tamanho = len(informacoes)\n        if media > media_da_secretaria:\n            for i in range(len(informacoes) - 1):\n                saida += '%.1f ' % float(informacoes[i])\n            saida += '%.1f' % float(informacoes[tamanho - 1])\n            print saida\n        elif media <= media_da_secretaria/2:\n            break\n    else:\n        break\n",
+      "name": "limitegastos.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "43d0a7ce31f9c53abd3dcd8424f12aeb",
+  "iid": 6165911480303616,
+  "activity_revision": "1.0.3"
+}

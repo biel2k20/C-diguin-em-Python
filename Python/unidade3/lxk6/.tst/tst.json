@@ -1,0 +1,14 @@
+{
+  "files": {
+    "csf.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Ci\u00eancia sem Fronteiras\n\nenem = float(raw_input())\ncreditos = float(raw_input())\npercent_creditos = creditos * 100.0 / 416\n\nif 20 <= percent_creditos <= 90 and enem >= 600:\n\tprint 'Todas as condi\u00e7\u00f5es satisfeitas.'\nelif 20 <= percent_creditos <= 90 and not(enem >= 600):\n\tprint 'Condi\u00e7\u00e3o ENEM n\u00e3o satisfeita.'\nelif not(20 <= percent_creditos <= 90) and enem >= 600:\n\tprint 'Condi\u00e7\u00e3o CR\u00c9DITOS n\u00e3o satisfeita.'\nelse:\n\tprint 'Nenhuma condi\u00e7\u00e3o satisfeita.'\n",
+      "name": "csf.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0ed8ea621df6f8ccc52d7de455d49b00",
+  "iid": 6432140430409728,
+  "activity_revision": "1.0.1"
+}

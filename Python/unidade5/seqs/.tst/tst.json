@@ -1,0 +1,18 @@
+{
+  "files": {
+    "sequencias.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Imprime sequ\u00eancia\n\ndef meu_split(palavra):\n\ts = ''\n\tl =[]\n\tfor i in range(len(palavra)):\n\t\tif palavra[i] != ' ':\n\t\t\ts += palavra[i]\n\t\telif s != '':\n\t\t\tl.append(int(s))\n\t\t\ts = ''\n\tif s != '':\n\t\tl.append(int(s))\n\treturn l\n\nalvo = int(raw_input())\nl = []\nl1 = []\ncont = 0\nconts = []\nwhile True:\n\tsequencia = raw_input()\n\tif sequencia == 'fim':\n\t\tbreak\n\telse:\n\t\tint_sequencia = meu_split(sequencia)\n\t\tl.append(sequencia)\n\t\tl1.append(int_sequencia)\n\tfor e in int_sequencia:\n\t\tif e > alvo:\n\t\t\tcont += 1\n\tconts.append(cont)\n\tcont = 0\nfor i in range(len(conts)):\n\tif conts[i] > len(l1[i]) / 2 :\n\t\tprint 'sequencia %d: %s' % (i + 1, l[i])\n",
+      "name": "sequencias.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1a848c995295394be40a206d6f298fe1",
+  "iid": 6346715208613888,
+  "activity_revision": "1.0.3"
+}

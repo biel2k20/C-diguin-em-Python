@@ -1,0 +1,18 @@
+{
+  "files": {
+    "voos.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Autoriza\u00e7\u00e3o voos\n\nminutos_decolagem = float(raw_input())\navioes = int(raw_input())\ntempos = []\nfor e in range(avioes):\n\ttempo_decolar = float(raw_input())\n\ttempos.append(tempo_decolar)\ncont = 0\ndispo = []\nfor t in range(len(tempos)):\n\tif tempos[t] <= minutos_decolagem:\n\t\tdisponivel = minutos_decolagem - tempos[t]\n\t\tcont += 1 \n\t\tminutos_decolagem = disponivel\n\nprint '%d voo(s) autorizados.' % (cont)\n",
+      "name": "voos.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 9,\n      \"vhalstead\": 51.89,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "5f343f2d599750861e411af9fc76cd8a",
+  "iid": 4942372236427264,
+  "activity_revision": "1.1.4"
+}

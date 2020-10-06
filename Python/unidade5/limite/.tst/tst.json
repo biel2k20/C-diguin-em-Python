@@ -1,0 +1,18 @@
+{
+  "files": {
+    "nolimite.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: No Limite\n\nl = []\nwhile True:\n\tentrada = raw_input()\n\tif entrada != '-':\n\t\tl.append(float(entrada))\n\telse:\n\t\tbreak\nnum = float(raw_input())\ncima = 0\nmedia = 0\nachou = False\n\nfor i in range(len(l)):\n\tif achou == False:\n\t\tcima += l[i]\n\t\tmedia = cima / (i + 1)\n\t\tif media > num:\n\t\t\tprint 'media = %.1f' % (media)\n\t\t\tprint 'num = %d' % (i + 1)\n\t\t\tachou = True\n\nif achou == False:\n\tprint 'limite n\u00e3o alcan\u00e7ado'\n",
+      "name": "nolimite.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 1,\n      \"lloc\": 17,\n      \"vhalstead\": 98.1,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0d626d2ea9dc50881f59b6c945e20e7d",
+  "iid": 6345841216323584,
+  "activity_revision": "1.0.3"
+}

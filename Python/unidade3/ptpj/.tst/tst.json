@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 14,\n      \"vhalstead\": 136.16,\n      \"header\": 4\n    }\n  ]\n}"
+    },
+    "docente.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Avalia\u00e7\u00e3o Docente\n\nsemestre = float(raw_input())\np_ensino = float(raw_input())\np_intelectual = float(raw_input())\np_orientacao = float(raw_input())\np_administrativas = float(raw_input())\n\nif semestre < 4:\n\tprint 'Promo\u00e7\u00e3o indeferida. N\u00famero de semestres insuficiente.'\nelif semestre >= 4:\n\tif p_ensino < 320 or p_intelectual < 100 or p_orientacao < 20:\n\t\tprint 'Promo\u00e7\u00e3o indeferida. Pontua\u00e7\u00e3o m\u00ednima n\u00e3o alcan\u00e7ada.'\n\telif p_ensino >= 320 and p_intelectual >= 100 and p_orientacao >= 20:\n\t\tmedia = (p_ensino + p_intelectual + p_orientacao + p_administrativas) / 4\n\t\tif media >= 140:\n\t\t\tprint 'Promo\u00e7\u00e3o deferida. Parab\u00e9ns!'\n\t\telse:\n\t\t\tprint 'Promo\u00e7\u00e3o indeferida. M\u00e9dia insuficiente.'\n",
+      "name": "docente.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "157469777dc5abf0dd1bed72fbbefc8c",
+  "iid": 5869694665883648,
+  "activity_revision": "1.1.1"
+}

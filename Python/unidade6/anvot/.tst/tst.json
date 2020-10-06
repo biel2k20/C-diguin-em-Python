@@ -1,0 +1,18 @@
+{
+  "files": {
+    "anlytics.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Analytics Assembleia\n\ndef conta_votos(votacoes, id_votacao):\n\tdef my_split(palavra):\n\t\ts = ''\n\t\tl = []\n\t\tfor i in range(len(palavra)):\n\t\t\tif palavra[i] != ',':\n\t\t\t\ts += palavra[i]\n\t\t\telif s != '':\n\t\t\t\tl.append(s)\n\t\t\t\ts = ''\n\t\tif s != '':\n\t\t\tl.append(s)\n\t\treturn l\n\tl = []\n\tcs = 0\n\tcn = 0\n\tfor i in range(len(votacoes)):\n\t\tvotos = my_split(votacoes[i])\n\t\tif votos[1] == str(id_votacao):\n\t\t\tif  votos[4] == 'sim':\n\t\t\t\tcs += 1\n\t\t\telif votos[4] == 'nao':\n\t\t\t\tcn += 1\n\tl.append(cs)\n\tl.append(cn)\n\treturn l\n",
+      "name": "anlytics.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "#!/usr/bin/env python\n# coding: utf-8\nimport unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nconta_votos = getattr(undertest, 'conta_votos', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_simples(self):\n        votacao = []\n        votacao.append('uma,543,joao,PPPP,sim')\n        assert conta_votos(votacao, 543) == [1,0]\n\n    def test_exemplo(self):\n        votacao = []\n        votacao.append('uma,543,joao,PPPP,sim')\n        votacao.append('uma,543,marina,PPPP,nao')\n        votacao.append('uma,5,joao,PPPP,sim')\n        votacao.append('uma,543,julio,P,nao')\n        votacao.append('uma,543,carlos,PBBBB,sim')\n        votacao.append('uma,543,juliana,PP,sim')\n        votacao.append('uma,99,joao,PPPP,sim')\n\n        assert conta_votos(votacao, 543) == [3,2]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "1c0396ef721b16fc9b66c367ec88f79b",
+  "iid": 5829786735738880,
+  "activity_revision": "2.0.1"
+}

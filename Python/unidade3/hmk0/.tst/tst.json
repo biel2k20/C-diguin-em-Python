@@ -1,0 +1,14 @@
+{
+  "files": {
+    "cntrldequalidae.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Controle de Qualidade\n\npeso_cong = float(raw_input())\npeso_dps = float(raw_input())\npeso_ag = peso_cong - peso_dps\nperc_ag = peso_ag * 100.0 / peso_cong\n\nif perc_ag >= 5 and perc_ag < 10:\n\tprint '%.1f%% do peso do produto \u00e9 de \u00e1gua congelada.' % (perc_ag)\n\tprint 'Produto em conformidade.'\nelif perc_ag >= 10:\n\tprint '%.1f%% do peso do produto \u00e9 de \u00e1gua congelada.' % (perc_ag)\n\tprint 'Produto n\u00e3o conforme.'\nelif perc_ag < 5:\n\tprint '%.1f%% do peso do produto \u00e9 de \u00e1gua congelada.' % (perc_ag)\n\tprint 'Produto qualis A.'\n",
+      "name": "cntrldequalidae.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "72fffa8fda705c5261ac0d4901e2db74",
+  "iid": 6238972531441664,
+  "activity_revision": "1.0.1"
+}

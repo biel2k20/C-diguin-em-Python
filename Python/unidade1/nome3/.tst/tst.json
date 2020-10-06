@@ -1,0 +1,14 @@
+{
+  "files": {
+    "vai.py": {
+      "category": "answer",
+      "data": "#coding:utf-8\n\na = raw_input()\nfor e in range(3):\n\tprint a\n",
+      "name": "vai.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "313bc24be959c9761c65962abf8407bb",
+  "iid": 5812592438149120,
+  "activity_revision": "1.2.0"
+}

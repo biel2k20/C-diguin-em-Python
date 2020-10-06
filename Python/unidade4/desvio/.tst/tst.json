@@ -1,0 +1,14 @@
+{
+  "files": {
+    "desviopadrao.py": {
+      "category": "answer",
+      "data": "#coding: utf-8  \n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Desvio Padr\u00e3o\n\nsequencia1 = raw_input().split()\nsequencia2 = raw_input().split()\nvalores_m1= 0.0\nvalores_m2 = 0.0\ncont1 = 0.0\ncont2 = 0.0\n\nfor i in range(len(sequencia1)):\n    valores_m1 += float(sequencia1[i])\n    cont1 += 1.0\nfor i in range(len(sequencia2)):\n\tvalores_m2 += float(sequencia2[i])\n\tcont2 += 1.0\n\nmedia2 = valores_m2 / cont2\nmedia1 = valores_m1 / cont1\n\ncima1 = 0.0\ncima2 = 0.0\nfor i in range(len(sequencia1)):\n\tcima1 += (float(sequencia1[i]) - float(media1)) ** 2\ndesvio1 = (float(cima1) / (cont1 - 1)) ** 0.5\nfor i in range(len(sequencia2)):\n\tcima2 += (float(sequencia2[i]) - float(media2)) ** 2\ndesvio2 = (float(cima2) / (cont2 - 1)) ** 0.5\n\nif desvio1 == desvio2:\n\tprint 'As sequ\u00eancias possuem o mesmo desvio padr\u00e3o (%.2f).' % (desvio1)\nelif desvio1 > desvio2:\n\tprint 'A sequ\u00eancia 1 possui o maior desvio padr\u00e3o (%.2f).' % (desvio1)\nelse:\n\tprint 'A sequ\u00eancia 2 possui o maior desvio padr\u00e3o (%.2f).' % (desvio2)\n",
+      "name": "desviopadrao.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "0e7fa82c40aa4056e7a41187758260c8",
+  "iid": 5879510410985472,
+  "activity_revision": "1.0.3"
+}

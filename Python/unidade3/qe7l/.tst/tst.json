@@ -1,0 +1,14 @@
+{
+  "files": {
+    "areasfiguras.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: \u00c0reas Figuras\nimport math\n\na = raw_input()\nif a == 'quadrado' or a == 'c\u00edrculo':\n\tb = float(raw_input())\n\tif a == 'quadrado':\n\t\tarea = b ** 2\n\t\tprint '\u00c1rea do quadrado: %.2f (cm2)' % (area)\n\telif a == 'c\u00edrculo':\n\t\tarea = math.pi * (b ** 2)\n\t\tprint '\u00c1rea do c\u00edrculo: %.2f (cm2)' % (area)\nelif a == 'ret\u00e2ngulo' or a == 'tri\u00e2ngulo':\n\tc = float(raw_input())\n\td = float(raw_input())\n\tif a == 'ret\u00e2ngulo':\n\t\tarea = c * d\n\t\tprint '\u00c1rea do ret\u00e2ngulo: %.2f (cm2)' % (area)\n\tif a == 'tri\u00e2ngulo':\n\t\tarea = (c * d) / 2\n\t\tprint '\u00c1rea do tri\u00e2ngulo: %.2f (cm2)' % (area)\n",
+      "name": "areasfiguras.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "47e2f58ba1b7797b4e50c3124ac7c6ed",
+  "iid": 5797123274571776,
+  "activity_revision": "1.1.0"
+}

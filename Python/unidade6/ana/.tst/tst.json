@@ -1,0 +1,23 @@
+{
+  "files": {
+    "anlytics.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Analytics Assembleia\n\ndef conta_votos(votacoes, id_votacao):\n\tdef my_split(palavra):\n\t\ts = ''\n\t\tl = []\n\t\tfor i in range(len(palavra)):\n\t\t\tif palavra[i] != ',':\n\t\t\t\ts += palavra[i]\n\t\t\telif s != '':\n\t\t\t\tl.append(s)\n\t\t\t\ts = ''\n\t\tif s != '':\n\t\t\tl.append(s)\n\t\treturn l\n\tl = []\n\tcs = 0\n\tcn = 0\n\tfor i in range(len(votacoes)):\n\t\tvotos = my_split(votacoes[i])\n\t\tif votos[2] == str(id_votacao):\n\t\t\tif  votos[1] == 'sim':\n\t\t\t\tcs += 1\n\t\t\telif votos[1] == 'nao':\n\t\t\t\tcn += 1\n\tl.append(cs)\n\tl.append(cn)\n\treturn l\n\t\t\n\t\t\n",
+      "name": "anlytics.py"
+    },
+    "public_tests.py": {
+      "category": "public",
+      "data": "#!/usr/bin/env python\n# coding: utf-8\nimport unittest\nimport sys\nimport imp\n\nclass PublicTests(unittest.TestCase):\n\n    def test_simples(self):\n        votacao = []\n        votacao.append('uma,sim,543,joao,PPPP')\n        assert conta_votos(votacao, 543) == [1,0]\n\n    def test_exemplo(self):\n        votacao = []\n        votacao.append('uma,sim,543,joao,PPPP')\n        votacao.append('uma,nao,543,marina,PPPP')\n        votacao.append('uma,sim,5,joao,PPPP')\n        votacao.append('uma,nao,543,julio,P')\n        votacao.append('uma,sim,543,carlos,PBBBB')\n        votacao.append('uma,sim,543,juliana,PP')\n        votacao.append('uma,sim,99,joao,PPPP')\n\n        assert conta_votos(votacao, 543) == [3,2]\n\nif __name__ == '__main__':\n\n    undertest = imp.load_source(\"undertest\", sys.argv[-1])\n    conta_votos = undertest.conta_votos\n    del sys.argv[-1]\n    unittest.main()\n"
+    },
+    "assembleia.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Analytics Assembleia\n\ndef conta_votos(votacoes, id_votacao):\n\tl = []\n\tc = 0\n\tc2 = 0\n\tfor i in range(len(votacoes)):\n\t\tif str(id_votacao) in votacoes[i]:\n\t\t\tif 'sim' in votacoes[i]:\n\t\t\t\tc += 1\n\t\t\telif 'nao' in votacoes[i]:\n\t\t\t\tc2 += 1\n\tl.append(c)\n\tl.append(c2)\n\treturn l\n",
+      "name": "assembleia.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "adabfeb47e288389755ced78721ba6c4",
+  "iid": 6470706988580864,
+  "activity_revision": "1.0.0"
+}

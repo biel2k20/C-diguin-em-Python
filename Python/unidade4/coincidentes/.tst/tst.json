@@ -1,0 +1,18 @@
+{
+  "files": {
+    "descartacoincidentes.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Descarta coincidente\n\nquant_num = int(raw_input())\n\naceitos = []\ndescartados = []\nace = 0\ndes = 0\n\nfor i in range(quant_num):\n\tnum = raw_input()\n\tcontrole = True\n\tfor e in range(len(num)):\n\t\tif int(num[e]) == e:\n\t\t\tdescartados.append(num)\n\t\t\tdes += 1\n\t\t\tcontrole = False\n\t\t\tbreak\n\tif controle:\n\t\taceitos.append(num)\n\t\tace += 1\n\t\t\t\nprint '---'\nprint '%d aceito(s)' % (ace)\nfor q in aceitos:\n\tprint q\nprint '%d descartado(s)' % (des)\nfor q in descartados:\n\tprint q\n",
+      "name": "descartacoincidentes.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 27.0,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "2f06784b3a4aa2ed2e9a7b1ba4f74b75",
+  "iid": 6593027724279808,
+  "activity_revision": "1.0.1"
+}

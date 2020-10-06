@@ -1,0 +1,18 @@
+{
+  "files": {
+    "enc-elemento.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Encontra Elementos\ndef meu_in(e, seq):\n\tfor i in range(len(seq)):\n\t\tif seq[i] == e:\n\t\t\treturn True\n\treturn False\n\nnum = int(raw_input())\ninteiros = raw_input()\nl_inteiros = []\nfor i in range(len(inteiros)):\n\tif inteiros[i] != ' ':\n\t\tl_inteiros.append(int(inteiros[i]))\n\nif meu_in(num, l_inteiros):\n\tprint 'sim'\nelse:\n\tprint 'n\u00e3o'\n",
+      "name": "enc-elemento.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 8,\n      \"vhalstead\": 4.75,\n      \"header\": 1\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "cb98020ea2d5ab5b74ddb08326dd746a",
+  "iid": 5909188735664128,
+  "activity_revision": "1.0.1"
+}

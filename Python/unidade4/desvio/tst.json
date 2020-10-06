@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "1 1 1.2 1 1 1.1 2\n2 3 4 5 6\n",
+      "output": "A sequência 2 possui o maior desvio padrão (1.58).\n"
+    },
+    {
+      "category": "public",
+      "input": "1 1\n1 1\n",
+      "output": "As sequências possuem o mesmo desvio padrão (0.00).\n"
+    }
+  ]
+}

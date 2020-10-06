@@ -1,0 +1,14 @@
+{
+  "files": {
+    "mult5.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: M\u00faltiplos de 5\n\nlimite = int(raw_input())\nmults = range(5,limite,5)\n\nl = []\nfor i in range(len(mults)):\n\tif mults[i] % 2 == 0:\n\t\tl.append(mults[i])\nfor i in range(len(l)):\n\tprint l[i]\n",
+      "name": "mult5.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "65aab1d88af2e649e951297a1071dc7d",
+  "iid": 5824712064106496,
+  "activity_revision": "1.0.1"
+}

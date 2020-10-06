@@ -1,0 +1,18 @@
+{
+  "files": {
+    "concurso.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Concurso\n\nc1nota1 = float(raw_input())\nc1nota2 = float(raw_input())\nc1nota3 = float(raw_input())\nc1idade = int(raw_input())\n\nc2nota1 = float(raw_input())\nc2nota2 = float(raw_input())\nc2nota3 = float(raw_input())\nc2idade = int(raw_input())\n\nmedia1 = (c1nota1 * 0.3) + (c1nota2 * 0.4) + (c1nota3 * 0.3)\nmedia2 = (c2nota1 * 0.3) + (c2nota2 * 0.4) + (c2nota3 * 0.3)\n\nif media1 > media2:\n\tprint 'O primeiro candidato foi aprovado com m\u00e9dia %.1f.' % (media1)\nelif media2 > media1:\n\tprint 'O segundo candidato foi aprovado com m\u00e9dia %.1f.' % (media2)\nelif media1 == media2:\n\tif c1idade > c2idade:\n\t\tprint 'O primeiro candidato foi aprovado com m\u00e9dia %.1f.' % (media1)\n\telif c2idade > c1idade:\n\t\tprint 'O segundo candidato foi aprovado com m\u00e9dia %.1f.' % (media2)\n\telse:\n\t\tprint 'Empate.'\n",
+      "name": "concurso.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 5,\n      \"pep8\": 0,\n      \"lloc\": 21,\n      \"vhalstead\": 262.33,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "3946078757211e38624b54bb9d322c2e",
+  "iid": 5544681505030144,
+  "activity_revision": "1.0.2"
+}

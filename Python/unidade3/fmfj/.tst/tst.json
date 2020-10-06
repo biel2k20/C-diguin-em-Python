@@ -1,0 +1,14 @@
+{
+  "files": {
+    "categoria.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: categoria\n\nnome = raw_input()\nidade = int(raw_input())\n\nif idade < 5:\n\tprint '%s, %d anos, N\u00e3o pode competir.' % (nome, idade)\nelif 5 <= idade <= 7:\n\tprint '%s, %d anos, Infantil A.' % (nome, idade)\nelif 8 <= idade <= 10:\n\tprint '%s, %d anos, Infantil B.' % (nome, idade)\nelif 11 <= idade <= 13:\n\tprint '%s, %d anos, Juvenil A.' % (nome, idade)\nelif 14 <= idade <= 17:\n\tprint '%s, %d anos, Juvenil B.' % (nome, idade)\nelif idade > 17:\n\tprint '%s, %d anos, Senior.' % (nome, idade)\n",
+      "name": "categoria.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "82778964014bf75a1c27e90bde656949",
+  "iid": 6706943108317184,
+  "activity_revision": "1.0.1"
+}

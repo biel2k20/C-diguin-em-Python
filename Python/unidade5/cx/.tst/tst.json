@@ -1,0 +1,19 @@
+{
+  "files": {
+    "cxpretadesleituras.py": {
+      "category": "answer",
+      "data": "#coding: utf-8   \n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Caixa Preta (descartando leituras)\n\n\ncontrole = True\ncontp = 0\ncontc = 0\nconta = 0\nwhile True:\n\tdados = raw_input().split()\n\tpeso = int(dados[0])\n\tcombust = int(dados[1])\n\taltitude = int(dados[2])\n\tfor i in range(len(dados)):\n\t\tif peso >= 0 and int(dados[i]) == peso:\n\t\t\tcontp += 1\n\t\telif combust >= 0 and int(dados[i]) == combust:\n\t\t\tcontc += 1\n\t\telif altitude >= 0 and int(dados[i]) == altitude:\n\t\t\tconta += 1\n\t\telse:\n\t\t\tbreak\n\tif controle:\n\t\tif int(dados[0]) < 0:\n\t\t\tprint 'dado inconsistente. peso negativo.'\n\t\t\tcontrole = False\n\t\t\tbreak\n\t\telif int(dados[1]) < 0:\n\t\t\tprint 'dado inconsistente. combust\u00edvel negativo.'\n\t\t\tcontrole = False\n\t\t\tbreak\n\t\telif int(dados[2]) < 0:\n\t\t\tprint 'dado inconsistente. altitude negativa.'\n\t\t\tcontrole = False\n\t\t\tbreak\n\nprint 'peso: %d' % (contp)\nprint 'combust\u00edvel: %d' % (contc)\nprint 'altitude: %d' % (conta)\n",
+      "name": "cxpretadesleituras.py"
+    },
+    "caixa.py": {
+      "category": "answer",
+      "data": "#coding: utf-8   \n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Caixa Preta (descartando leituras)\n\n\ncontp = 0\ncontc = 0\nconta = 0\nwhile True:\n\tdados = raw_input().split()\n\tpeso = int(dados[0])\n\tcombust = int(dados[1])\n\taltitude = int(dados[2])\n\tif peso < 0:\n\t\tprint 'dado inconsistente. peso negativo.'\n\t\tbreak\n\tcontp += 1\n\tif combust < 0:\n\t\tprint 'dado inconsistente. combust\u00edvel negativo.'\n\t\tbreak\n\tcontc += 1 \n\tif altitude < 0:\n\t\tprint 'dado inconsistente. altitude negativa.'\n\t\tbreak\n\tconta += 1\nprint 'peso: %d' % (contp)\nprint 'combust\u00edvel: %d' % (contc)\nprint 'altitude: %d' % (conta)\n",
+      "name": "caixa.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "608160bffb1143f5e39a8aae92348b4d",
+  "iid": 5836306395430912,
+  "activity_revision": "1.0.1"
+}

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 18,\n      \"vhalstead\": 225.72,\n      \"header\": 3\n    }\n  ]\n}"
+    },
+    "oRob\u00f4.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Karel, o Rob\u00f4\ndef meus(p):\n\ts = ''\n\tl = []\n\tfor i in range(len(p)):\n\t\tif p[i] != ' ':\n\t\t\ts += p[i]\n\t\telif s != '':\n\t\t\tl.append(s)\n\t\t\ts = ''\n\tif s != '':\n\t\tl.append(s)\n\treturn l\nx = 0\ny = 0\nwhile True:\n\tentrada = raw_input()\n\tb = meus(entrada)\n\tif int(b[1]) == 0:\n\t\tprint 'Fim de jogo'\n\t\tbreak\n\telse:\n\t\tif entrada[0] == 'C':\n\t\t\ty += int(b[1])\n\t\tif entrada[0] == 'D':\n\t\t\tx += int(b[1])\n\t\tif entrada[0] == 'B':\n\t\t\ty -= int(b[1])\n\t\tif entrada[0] == 'E':\n\t\t\tx -= int(b[1])\n\tif abs(x) == (2 * abs(y)) or abs(y) == (2 * abs(x)):\n\t\tprint 'Parab\u00e9ns, conquista do portal (%d, %d)' % (x , y)\n\t\tbreak\n",
+      "name": "oRob\u00f4.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9f6626a1f23846c0e98f177084c5631d",
+  "iid": 5781080162435072,
+  "activity_revision": "1.0.1"
+}

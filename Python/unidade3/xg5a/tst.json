@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "78.0\n1.75\n",
+      "output": "IMC: 25.5 - Sobrepeso\n"
+    },
+    {
+      "category": "public",
+      "input": "75\n1.75\n",
+      "output": "IMC: 24.5 - Saudável\n"
+    }
+  ]
+}

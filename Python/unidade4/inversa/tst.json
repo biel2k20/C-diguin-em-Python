@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "category": "public",
+      "input": "onibus\n",
+      "output": "A palavra onibus contém 0 caractere(s) coincidente(s) com a sua inversa.\n"
+    },
+    {
+      "category": "public",
+      "input": "carro\n",
+      "output": "A palavra carro contém 1 caractere(s) coincidente(s) com a sua inversa.\n"
+    }
+  ]
+}

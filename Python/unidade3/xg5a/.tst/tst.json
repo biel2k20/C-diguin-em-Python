@@ -1,0 +1,14 @@
+{
+  "files": {
+    "imc.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: C\u00e1lculo do IMC\n\npeso = float(raw_input())\naltura = float(raw_input())\nimc = peso / (altura ** 2)\nif imc < 16:\n\tprint 'IMC: %.1f - Magreza grave' % (imc)\nelif 16 <= imc < 17:\n\tprint 'IMC: %.1f - Magreza moderada' % (imc)\nelif 17 <= imc < 18.5:\n\tprint 'IMC: %.1f - Magreza leve' % (imc)\nelif 18.5 <= imc < 25:\n\tprint 'IMC: %.1f - Saud\u00e1vel' % (imc)\nelif 25 <= imc < 30:\n\tprint 'IMC: %.1f - Sobrepeso' % (imc)\nelif 30 <= imc < 35:\n\tprint 'IMC: %.1f - Obesidade Grau I' % (imc)\nelif 35 <= imc < 40:\n\tprint 'IMC: %.1f - Obesidade Grau II (severa)' % (imc)\nelif 40 <= imc:\n\tprint 'IMC: %.1f - Obesidade Grau III (m\u00f3rbida)' % (imc)\n",
+      "name": "imc.py"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "9f45d684d72cc7090a308e3f4f4b45e1",
+  "iid": 5870968056578048,
+  "activity_revision": "1.0.7"
+}

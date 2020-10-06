@@ -1,0 +1,18 @@
+{
+  "files": {
+    "fundodeinvestimento.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dnatas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Fundo de Investimento\n\ncima = 0.0\ncont = 0\nmedia = 0\nwhile True:\n\tvalor = float(raw_input())\n\tif valor >= media:\n\t\tcima += valor\n\t\tcont += 1\n\t\tmedia = cima / cont\n\telse:\n\t\tbreak\nprint 'Saldo total do FIS: R$%.2f.' % (cima)\nprint 'M\u00e9dia das contribui\u00e7\u00f5es: R$%.2f.' % (media)\n",
+      "name": "fundodeinvestimento.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 62.27,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "374eb5621859ee720539777a851320eb",
+  "iid": 6428097054244864,
+  "activity_revision": "1.0.1"
+}

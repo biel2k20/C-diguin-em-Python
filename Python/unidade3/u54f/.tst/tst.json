@@ -1,0 +1,18 @@
+{
+  "files": {
+    "cilclotrig.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Ciclo Trigonom\u00e9trico\n\nangulo = float(raw_input())\n\nif 0 < angulo < 90:\n\tprint 'Quadrante 1'\nelif 90 < angulo < 180:\n\tprint 'Quadrante 2'\nelif 180 < angulo < 270:\n\tprint 'Quadrante 3'\nelif 270 < angulo < 360:\n\tprint 'Quadrante 4'\nelif angulo > 360:\n\tqua = angulo % 360\n\tif 0 < qua < 90:\n\t\tprint 'Quadrante 1'\n\telif 90 < qua < 180:\n\t\tprint 'Quadrante 2'\n\telif 180 < qua < 270:\n\t\tprint 'Quadrante 3'\n\telif 270 < qua < 360:\n\t\tprint 'Quadrante 4'\n\telif qua == 0 or qua == 90 or qua == 180 or qua == 270 or qua == 360:\n\t\tprint 'Sobre eixos'\nelif angulo == 0 or angulo == 90 or angulo == 180 or angulo == 270 or angulo == 360:\n\tprint 'Sobre eixos'\n",
+      "name": "cilclotrig.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 9,\n      \"pep8\": 0,\n      \"lloc\": 12,\n      \"vhalstead\": 165.67,\n      \"header\": 4\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f48fe9600e81d9361cad4017170b9bc2",
+  "iid": 5122175740674048,
+  "activity_revision": "1.0.3"
+}

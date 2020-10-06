@@ -1,0 +1,18 @@
+{
+  "files": {
+    "unnamed.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dnatas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Unnamed\n\nconjunto_de_conjuntos = []\nconjunto = []\nentrada = \"\"\ncontador = 0\nelementos = 0\nwhile entrada != \"fim\":\n\tentrada = raw_input()\n\tif entrada == \"fim\":\n\t\tbreak\n\telif int(entrada) >= 0:\n\t\tconjunto.append(entrada)\n\telif int(entrada) < 0:\n\t\tconjunto_de_conjuntos.append(conjunto)\n\t\tconjunto = []\n\nmaior_conjunto = 0\nfor n in range(len(conjunto_de_conjuntos)):\n\tif len(conjunto_de_conjuntos[n]) > maior_conjunto:\n\t\tmaior_conjunto = len(conjunto_de_conjuntos[n])\n\t\tcontador = n\n\t\telementos = len(conjunto_de_conjuntos[n])\n\telif len(conjunto_de_conjuntos) == 1:\n\t\tcontador = n\n\t\telementos = len(conjunto_de_conjuntos)\n\nif len(conjunto_de_conjuntos) > 0:\n\tprint \"Conjunto %d - %d elemento(s)\" %(contador + 1, elementos)\n",
+      "name": "unnamed.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"cc\": 7,\n      \"pep8\": 1,\n      \"lloc\": 19,\n      \"vhalstead\": 85.84,\n      \"header\": 3\n    }\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "f3acc9f2df0d6495c004345232ca00fa",
+  "iid": 5789841224630272,
+  "activity_revision": "1.0.1"
+}

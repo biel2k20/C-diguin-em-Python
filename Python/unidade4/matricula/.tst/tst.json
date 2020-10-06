@@ -1,0 +1,18 @@
+{
+  "files": {
+    "convertematricula.py": {
+      "category": "answer",
+      "data": "#coding: utf-8\t\n#Gabriel Dantas Santos de Azev\u00eado\n#Matr\u00edcula: 118210140\n#Problema: Converte matr\u00edcula\n\nmatricula = raw_input()\ns = '1'\n\nfor i in range(1,len(matricula)):\n\tif i == 5:\n\t\tbreak\n\ts += matricula[i]\ns += '0'\nfor i in range(5,len(matricula)):\n\ts += matricula[i]\n\t\nprint s\n",
+      "name": "convertematricula.py"
+    },
+    "qcheck.json": {
+      "category": "public",
+      "data": "{\n  \"quality\": [\n    {\n      \"lloc\": 8,\n      \"header\": 3,\n      \"cc\": 3,\n      \"pep8\": 0,\n      \"vhalstead\": 20.9,\n      \"icheckscore\": 0.67\n    }\n  ],\n  \"problem_vocabulary\": [\n    \"utiliz\",\n    \"tipico\",\n    \"quint\",\n    \"zer\",\n    \"tal\",\n    \"sendo\",\n    \"aluno\",\n    \"matricula\",\n    \"digitos\",\n    \"total\",\n    \"inserir\",\n    \"anteri\",\n    \"regras\",\n    \"oito\",\n    \"slice\",\n    \"inic\",\n    \"acima\",\n    \"curso\",\n    \"computaca\",\n    \"numeros\",\n    \"nao\",\n    \"exempl\",\n    \"numer\",\n    \"fazer\",\n    \"apos\",\n    \"basta\",\n    \"passos\",\n    \"ufcg\",\n    \"ciencia\",\n    \"entrada\",\n    \"digit\",\n    \"mudanc\",\n    \"possuindo\",\n    \"atencao\",\n    \"primeiro\",\n    \"passaram\",\n    \"matriculas\",\n    \"possuir\",\n    \"descritas\",\n    \"imprime\",\n    \"antig\",\n    \"said\",\n    \"dois\",\n    \"realiza\",\n    \"nov\",\n    \"execuca\",\n    \"escreva\",\n    \"recebe\",\n    \"formato\",\n    \"us\",\n    \"alteracao\",\n    \"iniciando\",\n    \"conversao\",\n    \"listas\",\n    \"permitido\",\n    \"seguir\",\n    \"trocar\",\n    \"sempr\",\n    \"conforme\"\n  ]\n}"
+    }
+  },
+  "kind": "assignment",
+  "name": null,
+  "checksum": "cbe42df840311a63f406d6b01f9286ee",
+  "iid": 4579041759723520,
+  "activity_revision": "1.1.5"
+}
